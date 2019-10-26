@@ -1,0 +1,10 @@
+{
+  "devToolsPort": 19002,
+  "expoServerPort": 19000,
+  "packagerPort": 19001,
+  "packagerPid": 19153,
+  "expoServerNgrokUrl": "https://rf-tw2.anonymous.tasks.exp.direct",
+  "packagerNgrokUrl": "https://packager.rf-tw2.anonymous.tasks.exp.direct",
+  "ngrokPid": 19167,
+  "webpackServerPort": null
+}
