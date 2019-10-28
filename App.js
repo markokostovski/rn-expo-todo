@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Text, View, Button, StyleSheet } from "react-native";
+import Child from "./src/Components/Child";
 
 export default () => {
   const [count, setCount] = useState(0);
@@ -9,11 +10,7 @@ export default () => {
       <View style={styles.text}>
         <Text>You clicked {count} times</Text>
       </View>
-      <Button
-        style={styles.button}
-        onPress={() => setCount(count + 1)}
-        title="Click me"
-      />
+      <Child count={count} setCount={setCount} />
     </View>
   );
 };
@@ -28,9 +25,5 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center"
-  },
-  button: {
-    flex: 0,
-    display: "none"
   }
 });
