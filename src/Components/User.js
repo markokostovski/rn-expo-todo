@@ -5,23 +5,16 @@ import { connect } from "react-redux";
 import { setUserData } from "../redux/user/actions.js";
 
 const User = props => {
-  const { user, setUserData } = props;
+  const { user } = props;
 
-  // setTimeout(() => {
-  //   setUserData({ lastName: "Min" });
-  // }, 4000);
-
-  return <Text style={styles.text}>{user.lastName}</Text>;
+  return <Text style={styles.text}>Hello {user.firstName}</Text>;
 };
 
 const mapStateToProps = state => ({
   user: state.user
 });
 
-export default connect(
-  mapStateToProps,
-  { setUserData }
-)(User);
+export default connect(mapStateToProps)(User);
 
 const styles = StyleSheet.create({
   text: {

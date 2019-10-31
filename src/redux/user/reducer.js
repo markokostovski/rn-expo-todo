@@ -1,8 +1,11 @@
 import { SET_USER_DATA } from "./types";
 
 const initialState = {
-  name: "Ana",
-  lastName: "Max"
+  firstName: "",
+  lastName: "",
+  email: "",
+  phone: "",
+  role: "regular"
 };
 
 const reducer = (state = initialState, action) => {
