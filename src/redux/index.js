@@ -3,11 +3,13 @@ import logger from "redux-logger";
 import { combineReducers, createStore, applyMiddleware } from "redux";
 
 import userReducer from "./user/reducer";
+import postsReducer from "./posts/reducer";
 
 const initialState = {};
 
 const rootReducer = combineReducers({
-  user: userReducer
+  user: userReducer,
+  posts: postsReducer
 });
 
 const configureStore = () => {

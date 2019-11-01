@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { TextInput, Button, StyleSheet } from "react-native";
 import { connect } from "react-redux";
 
-import { setUserData } from "../redux/user/actions.js";
+import { setUserData } from "../redux/user/actions";
 
 const Input = props => {
   const { setUserData } = props;
